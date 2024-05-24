@@ -1,0 +1,303 @@
+p {
+  margin: 0px;
+}
+.modal-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.close-icon {
+  color: #fc5451;
+  cursor: pointer;
+}
+.modal {
+  width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: 83%;
+}
+.check-circle {
+  flex: 1;
+  justify-content: start;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.event-title {
+  font-size: 26px;
+  color: #e74c3c;
+  padding: 10px;
+  margin-bottom: 13px;
+  padding-left: 25px;
+}
+.input-style {
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.event-date-container {
+  margin-bottom: 20px;
+  display: flex;
+  padding-left: 10px;
+}
+
+.event-date-container label {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.date-time-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.calendar-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fc5451; /* Blue color for calendar icon */
+}
+
+.calendar-button:hover {
+  color: #de2e2b; /* Darker blue on hover */
+}
+
+.date-time-modal {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-date-picker,
+.event-time-picker {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.close-button,
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e74c3c; /* Red color for buttons */
+  margin-left: 5px;
+}
+
+.modal-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.event-date {
+  border: none;
+  width: 100%;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+.event-note {
+  /* border-bottom: 1px solid #ccc; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.assign-to {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.assign-to label {
+  margin: 0px 20px;
+  font-size: 20px;
+  color: #6e6e6e;
+  font-weight: 500;
+}
+
+.assign-select {
+  flex: 1;
+  padding: 5px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc !important;
+  border-radius: 50px !important;
+}
+.MuiInput-underline:before {
+  border-bottom: none !important;
+}
+.MuiInput-underline:after {
+  border-bottom: none !important;
+}
+.MuiSelect-icon {
+  margin-right: 20px;
+  color: black !important;
+  top: 14px !important;
+  font-size: 35px !important;
+}
+.assign-option {
+  display: flex;
+  flex-direction: row;
+  color: #058973;
+  gap: 15px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.assign-option > p {
+  margin: 0px;
+}
+
+.note-cont {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 23px;
+}
+.note-cont > p {
+  font-size: 20px;
+  color: #6e6e6e;
+  font-weight: 500;
+}
+.note-cont > textarea {
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 0px;
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+}
+.comments-section {
+  margin-top: 10px;
+}
+
+.comments-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4c4c4c;
+}
+.comments-cont {
+  height: 80px;
+  overflow-y: auto;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+.no-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.comment > div > h3 {
+  color: #058973;
+}
+.comment-inner {
+  flex: 1;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-text {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.delete-comment-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  color: #e74c3c; /* Red color for delete button */
+}
+
+.delete-comment-button:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+.new-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.new-comment input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.new-comment button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  color: #fc5451; /* Blue color for add comment button */
+}
+
+.new-comment button:hover {
+  color: #d33a37; /* Darker blue on hover */
+}
+
+.submit-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.submit-task > button {
+  background-color: #fd3734;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.submit-task > button:hover {
+  background-color: #a10402; /* Darker blue on hover */
+}
