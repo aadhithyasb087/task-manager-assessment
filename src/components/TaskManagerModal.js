@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./TaskManagerModal.css";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import DeleteIcon from "@material-ui/icons/Delete";
 import CloseIcon from "@material-ui/icons/Close";
 import DatePicker from "react-datepicker";
